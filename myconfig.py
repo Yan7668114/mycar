@@ -97,8 +97,8 @@ STEERING_LEFT_PWM = 430         #pwm value for full left steering
 STEERING_RIGHT_PWM = 310        #pwm value for full right steering
 THROTTLE_CHANNEL = 0            #(deprecated) channel on the 9685 pwm board 0-15
 THROTTLE_FORWARD_PWM = 385      #pwm value for max forward throttle
-THROTTLE_STOPPED_PWM = 305      #pwm value for no movement
-THROTTLE_REVERSE_PWM = 220      #pwm value for max reverse throttle
+THROTTLE_STOPPED_PWM = 310      #pwm value for no movement
+THROTTLE_REVERSE_PWM = 270      #pwm value for max reverse throttle
 # 
 # #
 # # PIGPIO_PWM (deprecated in favor of PWM_STEERING_THROTTLE)
@@ -576,10 +576,10 @@ THROTTLE_REVERSE_PWM = 220      #pwm value for max reverse throttle
 # SEQUENCE_LENGTH = 3             #some models use a number of images over time. This controls how many.
 # 
 # #IMU
-HAVE_IMU = True                #when true, this add a Mpu6050 part and records the data. Can be used with a
-IMU_SENSOR = 'mpu6050'          # (mpu6050|mpu9250)
-IMU_ADDRESS = 0x68              # if AD0 pin is pulled high them address is 0x69, otherwise it is 0x68
-IMU_DLP_CONFIG = 3              # Digital Lowpass Filter setting (0:250Hz, 1:184Hz, 2:92Hz, 3:41Hz, 4:20Hz, 5:10Hz, 6:5Hz)
+HAVE_IMU = False                #when true, this add a Mpu6050 part and records the data. Can be used with a
+# IMU_SENSOR = 'mpu6050'          # (mpu6050|mpu9250)
+# IMU_ADDRESS = 0x68              # if AD0 pin is pulled high them address is 0x69, otherwise it is 0x68
+# IMU_DLP_CONFIG = 3              # Digital Lowpass Filter setting (0:250Hz, 1:184Hz, 2:92Hz, 3:41Hz, 4:20Hz, 5:10Hz, 6:5Hz)
 # 
 # #SOMBRERO
 # HAVE_SOMBRERO = False           #set to true when using the sombrero hat from the Donkeycar store. This will enable pwm on the hat.
@@ -746,7 +746,7 @@ IMU_DLP_CONFIG = 3              # Digital Lowpass Filter setting (0:250Hz, 1:184
 # REALSENSE_D435_ID = None        # serial number of camera or None if you only have one camera (it will autodetect)
 # 
 # # Stop Sign Detector
-# STOP_SIGN_DETECTOR = False
+# STOP_SIGN_DETECTOR = True
 # STOP_SIGN_MIN_SCORE = 0.2
 # STOP_SIGN_SHOW_BOUNDING_BOX = True
 # STOP_SIGN_MAX_REVERSE_COUNT = 10    # How many times should the car reverse when detected a stop sign, set to 0 to disable reversing

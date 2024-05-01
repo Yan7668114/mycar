@@ -1,5 +1,5 @@
-["cam/image_array", "user/angle", "user/throttle", "user/mode", "imu/acl_x", "imu/acl_y", "imu/acl_z", "imu/gyr_x", "imu/gyr_y", "imu/gyr_z"]
-["image_array", "float", "float", "str", "float", "float", "float", "float", "float", "float"]
+["cam/image_array", "user/angle", "user/throttle", "user/mode"]
+["image_array", "float", "float", "str"]
 {}
-{"created_at": 1709125694.4786336, "sessions": {"all_full_ids": ["24-02-28_0"], "last_id": 0, "last_full_id": "24-02-28_0"}}
-{"paths": ["catalog_0.catalog", "catalog_1.catalog"], "current_index": 1831, "max_len": 1000, "deleted_indexes": []}
+{"created_at": 1714567128.7727122, "sessions": {"all_full_ids": ["24-05-01_0"], "last_id": 0, "last_full_id": "24-05-01_0"}}
+{"paths": ["catalog_0.catalog", "catalog_1.catalog", "catalog_2.catalog", "catalog_3.catalog", "catalog_4.catalog"], "current_index": 4371, "max_len": 1000, "deleted_indexes": []}
