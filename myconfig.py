@@ -84,8 +84,8 @@ PWM_STEERING_THROTTLE = {
     "PWM_THROTTLE_INVERTED": False,         # True if hardware requires an inverted PWM pulse
     "STEERING_LEFT_PWM": 430,               #pwm value for full left steering
     "STEERING_RIGHT_PWM": 310,              #pwm value for full right steering
-    "THROTTLE_FORWARD_PWM": 450,            #pwm value for max forward throttle
-    "THROTTLE_STOPPED_PWM": 385,            #pwm value for no movement
+    "THROTTLE_FORWARD_PWM": 430,            #pwm value for max forward throttle
+    "THROTTLE_STOPPED_PWM": 386,            #pwm value for no movement
     "THROTTLE_REVERSE_PWM": 220,            #pwm value for max reverse throttle
 }
 # 
@@ -576,9 +576,9 @@ PWM_STEERING_THROTTLE = {
 # SEQUENCE_LENGTH = 3             #some models use a number of images over time. This controls how many.
 # 
 # #IMU
-HAVE_IMU = False                #when true, this add a Mpu6050 part and records the data. Can be used with a
-# IMU_SENSOR = 'mpu6050'          # (mpu6050|mpu9250)
-# IMU_ADDRESS = 0x68              # if AD0 pin is pulled high them address is 0x69, otherwise it is 0x68
+HAVE_IMU = True                #when true, this add a Mpu6050 part and records the data. Can be used with a
+IMU_SENSOR = 'mpu6050'          # (mpu6050|mpu9250)
+IMU_ADDRESS = 0x68              # if AD0 pin is pulled high them address is 0x69, otherwise it is 0x68
 # IMU_DLP_CONFIG = 3              # Digital Lowpass Filter setting (0:250Hz, 1:184Hz, 2:92Hz, 3:41Hz, 4:20Hz, 5:10Hz, 6:5Hz)
 # 
 # #SOMBRERO
